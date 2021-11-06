@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodex Ninja</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-touch-ripple@3.0.0/dist/vue-touch-ripple.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/vue-touch-ripple@3.0.0/dist/vue-touch-ripple.css" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="load();">
+    <div id="app">
+      <nav id="nav">
+        <div class="logo-wrapper hidden">
+          <a class="logo" href="#app">Nodex Ninja</a>
+        </div>
+        <div class="menu hidden">
+          <a href="#app" class="navlink">Home</a>
+          <a href="#about" class="navlink">About</a>
+          <a href="#projects" class="navlink">Projects</a>
+        </div>
+        <div class="buttons hidden">
+          <cbtn itemprop="Subscribe" onclick="youtube();"></cbtn>
+          <tbtn itemprop="Server" onclick="server();"></tbtn>
+        </div>
+      </nav>
+      <div class="banner">
+        <div id="splash">
+          <span class="heading hidden">Coding Forever</span>
+          <div class="focus hidden">
+            Hello, I am Nodex, a passionate programmer who builds websites and apps! I use Vue, React, Python and C#. You can find me on Scratch, GitHub and YouTube!
+          </div>
+        </div>
+        <img src="programming-animate.svg" alt="nodexninja" id="coder">
+        <a id="scroll" class="material-icons-round hidden" href="#about">expand_more</a>
+      </div>
+      <section id="about" class="">
+        <div class="content">
+          <div class="text">
+            <span class="heading hidden">About</span>
+            <div class="focus hidden">
+              I am glad you decided to visit my website! As you know I am a programmer, but I'm also a chess player. Feel free to challenge me to a game any time!
+            </div>
+          </div>
+          <div class="graphic">
+            <img src="chess-animate.svg" alt="nodexninja" id="coder">
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="">
+        <div class="content">
+          <div class="graphic">
+            <img src="development-animate.svg" alt="nodexninja" id="coder">
+          </div>
+          <div class="text">
+            <span class="heading hidden">Projects</span>
+            <div class="focus hidden">
+              Over the past few months I have been strengthening my coding skills and releasing JavaScript templates on GitHub. You can check out my projects on Scratch, GitHub or even on this website!
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="milestones" class="">
+        <div class="content">
+          <div class="text">
+            <span class="heading hidden">Milestones</span>
+            <div class="focus hidden">
+              My journey as a programmer has been an eventful one. I have evolved from using Scratch to using JavaScript now, but I still use scratch sometimes when I want to communicate a new game idea to the vast community. I own two scratch accounts: <a href="https://scratch.mit.edu/users/samuraininja360">samuraininja360</a> and <a href="https://scratch.mit.edu/users/nodexninja">nodexninja</a>, but most importantly I have to thank those people who have helped me reach over 500 followers on scratch. 
+            </div>
+          </div>
+          <div class="graphic">
+            <img src="completed-animate.svg" alt="nodexninja" id="coder">
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
+    <script src="script.js"></script>
+    <script src="events.js"></script>
+  </body>
+</html>
