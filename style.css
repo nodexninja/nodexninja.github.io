@@ -229,3 +229,16 @@ footer {
   flex-direction: column;
   width: 15vw;
 }
+#nodex {
+  width: 4vw;
+}
+#nodexninja {
+  width: 17vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#nodexninja a {
+  font-size: 2vw;
+}
